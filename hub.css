@@ -1,0 +1,167 @@
+/*<!-- *****  GLOBAL  ***** -->*/
+#home,#about,#services,#contact{
+  background: url('./corporate.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+html{
+  box-sizing: border-box;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+*{
+  margin: 0;
+  padding: 0;
+}  
+nav{
+  background-color: red;
+  height: 50px;
+  position: relative;
+}
+.nav-style{
+  border-bottom: 5px solid whitesmoke;
+}
+header{
+  display: inline-block;
+  position: relative;
+  left: 1rem;
+  height: 50px;
+  padding: 13px;
+  font: bold 20px "courier new";
+  color: white;
+}
+ul{
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+  height: 50px;
+  padding: 12px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+}
+a:link, a:visited{
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+  font: bold 20px "courier new";
+}
+a:hover, a:active {
+  background-color: gray;
+  border-radius: 15px;
+}
+/*<!-- *****  HOMEPAGE  ***** -->*/
+.home-page{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 36rem;
+  justify-content: center;
+  align-items: center;
+}
+.home-page h1{
+  font: 900 5em fantasy;
+  color: red;
+  background-color: linen;
+  border-radius: 2rem 2rem 0 0;
+  padding: 1rem;
+}
+.home-page h2{
+  color: lightgreen;
+  font: 700 4em cursive;
+  background: grey;
+  padding: 1.5rem;
+  border-radius: 0 0 2rem 2rem;
+}
+/*<!-- *****  ABOUT  ***** -->*/
+.about-page-flex{
+  display: flex;
+  height: 24rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.about-page h1{
+  text-align: center;
+  margin: 3rem auto 2rem auto;
+  color: red;
+  font: 900 4em fantasy;
+}
+.about-page p{
+  width: 60%;
+  color: darkgreen;
+  text-align: justify;
+  font: italic 500 1.7rem sans-serif;
+  border-radius: 4rem 0 4rem 0;
+  background: linear-gradient(205deg,pink, aliceblue);
+  padding: 2.5rem;
+}
+/*<!-- *****  SERVICES  ***** -->*/
+#services h1{
+  text-align: center;
+  margin: 3rem auto 2rem auto;
+  color: red;
+  font: 900 4em fantasy;
+}
+.service-page{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+.service-page figure img{
+  width: 230px;
+  height: 150px;
+  border: 2px ridge teal;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.service-page figure{
+  display: inline-block;
+  width: 300px;
+  border-radius: 2rem 0;
+  background: linear-gradient(120deg, pink, aliceblue);
+  padding: 30px;
+  text-align: center;
+}
+.service-page p{
+  color: darkgreen;
+  font: 500 1rem sans-serif;
+}
+/*<!-- *****  CONTACT  ***** -->*/
+.contact-page{
+  display: flex;
+  flex-direction: column;
+  height: 35rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.contact-page-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(205deg, pink, aliceblue);
+  border-radius: 4rem 0 4rem 0;
+  width: 65%;
+  height: 23rem;
+}
+.contact-page h1{
+ color: red;
+ font: 900 4em fantasy; 
+ margin: 2rem
+}
+.contact-page p{
+  color: darkgreen;
+  font: italic 500 2.5em sans-serif;
+  margin-bottom: 1rem;
+}
+.contact-page h4{
+  color: darkgreen;
+  font: bold 2em sans-serif;
+}
+.contact-page h4:last-child{
+  font: italic bold;
+  margin: 0.5rem 0;
+}
